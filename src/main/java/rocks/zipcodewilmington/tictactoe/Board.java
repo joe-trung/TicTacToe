@@ -12,11 +12,11 @@ public class Board {
     }
 
     public Boolean isInFavorOfX() {
-        return (horizontalCheck('x') || verticalCheck('x') || diagonalCheck('x'));
+        return (horizontalCheck('X') || verticalCheck('X') || diagonalCheck('X'));
     }
 
     public Boolean isInFavorOfO() {
-        return (horizontalCheck('o') || verticalCheck('o') || diagonalCheck('o'));
+        return (horizontalCheck('O') || verticalCheck('O') || diagonalCheck('O'));
     }
 
     public Boolean isTie() {
@@ -25,9 +25,9 @@ public class Board {
 
     public String getWinner() {
         if (isInFavorOfO()) {
-            return "o";
+            return "O";
         } else if (isInFavorOfX()) {
-            return "x";
+            return "X";
         } else {
             return "";
         }
